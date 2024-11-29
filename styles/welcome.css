@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.black-grad {
+  background-color: rgba(27, 24, 24, 0.936);
+}
+  
+  .blue {
+    background-color: #3b82f6;
+  }
+  
+  .green {
+    background-color: #22c55e;
+  }
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  z-index: 1000;
+}
+  
+  .scroll-snap-card {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow:auto;
+  }
+  
+  .scroll-snap-card .slide {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    position: relative;
+  }
+
+.top-nav-pad {
+  padding-top: 80px;
+}
+
+  .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    background-image: url('../assets/Monitors_transparent_1846x589.png');
+    background-size: 100% 500px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+  }
+
+  .two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    font-family: 'Merriweather', serif;
+    background-image: url('../assets/day-trading-6016x3384-13833.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    color: whitesmoke;
+    position: relative;
+  }
+
+  .two-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #trading-app-phone {
+    width: 1300px;
+    height: 697px;
+    position: absolute;
+    top: 100px;
+    left: 600px;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .three-back-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .video-text {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+  }
+
+.button-27 {
+  appearance: none;
+  background-color: whitesmoke;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color:black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  max-width: 200px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-27:hover {
+  background-color: black;
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+  
+  .scroll-snap-card .slide p {
+    font-size: 1em;
+    color: white;
+    font-weight: 700;
+  }
