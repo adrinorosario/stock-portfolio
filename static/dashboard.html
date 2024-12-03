@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">Pineapple</div>
+      <ul class="menu">
+        <li class="menu-item active">Dashboard</li>
+        <li class="menu-item">Exchange</li>
+        <li class="menu-item">Library</li>
+        <li class="menu-item">Schedules</li>
+        <li class="menu-item">Payouts</li>
+        <li class="menu-item">Settings</li>
+      </ul>
+      <div class="privacy">
+        <p>Keep you safe!</p>
+        <button class="update-privacy">Update Privacy</button>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <h1>Hello Username</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+        </div>
+      </header>
+      <section class="overview">
+        <div class="card">BTC = USD<br><strong>9784.79</strong></div>
+        <div class="card">LTC = USD<br><strong>8741.19</strong></div>
+        <div class="card">ETM = USD<br><strong>4567.16</strong></div>
+        <div class="card">BNB = USD<br><strong>6547.79</strong></div>
+      </section>
+      <section class="details">
+        <div id="market-chart" class="chart"></div>
+        <div class="balances">
+          <h2>Balances</h2>
+          <p><strong>$9784.79</strong></p>
+        </div>
+      </section>
+      <section class="activities">
+        <h2>Recent Trading Activities</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>%</th>
+            <th>Market Cap</th>
+            <th>Volume(24h)</th>
+          </tr>
+          <tr>
+            <td>Bitcoin</td>
+            <td>$40,796.55</td>
+            <td>+2.69%</td>
+            <td>$797.57B</td>
+            <td>$40.12B</td>
+          </tr>
+          <tr>
+            <td>Ethereum</td>
+            <td>$2,796.60</td>
+            <td>-3.33%</td>
+            <td>$347.62B</td>
+            <td>$20.56B</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.0.0/dist/lightweight-charts.standalone.production.js"></script>
+  <script src="../scripts/dashboard.js"></script>
+
+</body>
+</html>
