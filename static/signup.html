@@ -11,6 +11,8 @@
     <title>Pineapple Trading Inc.</title>
 </head>
 <body>
+    <p style="width: 100%;" id="current-location" onclick="getLocation()">Try It</p>
+
     <div class="section1">
         <div class="header">
             <img src="../logo.png" alt="company-logo" id="company-logo">
@@ -47,5 +49,24 @@
     </div>
     <div class="section2">
     </div>
+
+    <script>
+        function getLocation() {
+            const locationElement = document.getElementById("current-location");
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const { latitude, longitude } = position.coords;
+                        locationElement.textContent = `Latitude: ${latitude.toFixed(2)}, Longitude: ${longitude.toFixed(2)}`;
+                    },
+                    (error) => {
+                        locationElement.textContent = "Unable to fetch location. Please allow location access.";
+                    }
+                );
+            } else {
+                locationElement.textContent = "Geolocation is not supported by your browser.";
+            }
+        }
+    </script>
 </body>
 </html>

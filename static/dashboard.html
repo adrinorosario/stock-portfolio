@@ -38,10 +38,11 @@
         <div class="card">BNB = USD<br><strong>6547.79</strong></div>
       </section>
       <section class="details">
-        <div id="market-chart" class="chart"></div>
-        <div class="balances">
-          <h2>Balances</h2>
-          <p><strong>$9784.79</strong></p>
+        <div id="market-chart" class="chart">
+          <canvas id="drawing-canvas"></canvas>
+        </div>
+        <div id="bar-chart" class="chart">
+          <canvas id="drawing-bar-canvas"></canvas>
         </div>
       </section>
       <section class="activities">
@@ -75,6 +76,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.0.0/dist/lightweight-charts.standalone.production.js"></script>
   <script src="../scripts/dashboard.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
