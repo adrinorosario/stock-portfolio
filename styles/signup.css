@@ -1,152 +1,150 @@
+/* General HTML and body styling */
 html {
-  --s: 222px; /* control the size*/
+  --s: 222px; /* control the size */
   --c1: #dedede;
   --c2: #ffffff;
   --c3: #ebebeb;
-  
-  background:
-    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 50%) 
-     calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
-    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 50%);
-  background-size: var(--s) calc(var(--s)*tan(30deg));
+
+  background: repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 50%)
+      calc(var(--s) / 2) calc(var(--s) * tan(30deg) / 2),
+    repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 50%);
+  background-size: var(--s) calc(var(--s) * tan(30deg));
 }
 
 body {
   color: black;
-}
-
-.section1 {
-  width: 50%;
-  float: left;
-  height: 100vh;
-  border-right: 1vw;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 30px;
-}
-
-.section2 {
-  background-color: lightblue;
-  background-image: url('../assets/day-trading-2732x2732-13833.jpg');
-  background-size: 100% 100%;
-  width: 50%;
-  float: left;
-  height: 100vh;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-.header {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  background-image: url('../assets/day-trading-2732x2732-13833.jpg'); /* Background image for the entire page */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.header > h1 {
-  margin: 0 0 0 20px;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.header-2 {
-  display: flex;
-  align-items: center;
-  font-size: 100px;
-  margin-left: 15%;
-  margin-bottom: 5%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-#company-logo {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  margin-left: 100px;
-}
-
+/* Form container styling */
 .container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: 0 auto;
+  align-items: center;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-}
-
-.form {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  max-width: 350px;
-  height: 450px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparency to allow background image to show through */
   border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  justify-content: space-between;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#company-logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Form Title */
 .form-title {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
   text-align: center;
-  color: #000;
 }
 
+/* Input fields styling */
 .input-container {
   position: relative;
-}
-
-.input-container input, .form button {
-  outline: none;
-  border: 1px solid #e5e7eb;
-  margin: 8px 0;
+  margin-bottom: 1.5rem;
 }
 
 .input-container input {
-  background-color: #fff;
-  padding: 1rem;
-  padding-right: 3rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  width: 300px;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-}
-
-.submit {
-  display: block;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  background-color: #4F46E5;
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
   width: 100%;
+  padding: 0.875rem;
+  padding-left: 2.5rem; /* Space for icon */
   border-radius: 0.5rem;
-  text-transform: uppercase;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  outline: none;
 }
 
+.input-container i {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  font-size: 1.25rem;
+}
+
+/* Submit button */
+.submit {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: #4F46E5;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #3b37c1;
+}
+
+/* Sign up link */
 .signup-link {
-  color: #6B7280;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   text-align: center;
+  margin-top: 1rem;
+  font-size: 0.875rem;
 }
 
 .signup-link a {
+  color: #4F46E5;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design: Ensuring good layout on smaller screens */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  #company-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
 }

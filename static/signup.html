@@ -4,69 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/signup.css">
     <title>Pineapple Trading Inc.</title>
 </head>
 <body>
-    <p style="width: 100%;" id="current-location" onclick="getLocation()">Try It</p>
-
-    <div class="section1">
+    <div class="form-container">
         <div class="header">
             <img src="../logo.png" alt="company-logo" id="company-logo">
             <h1>Pineapple Trading Inc.</h1>
         </div>
 
-        <div class="header-2">
-            <h2 style="font-size: 25px; text-align: center;">Sign up and become a better investor on the go</h2>
-        </div>
-
-        <div class="container form-container">
-            <form class="form" onsubmit="validateForm()">
-                <p class="form-title">Create an account</p>
-                <div class="input-container">
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                </div>
-                    <div class="input-container">
-                    <input type="email" name="email" id="email" placeholder="Enter email">
-                </div>
-                <div class="input-container">
-                    <input type="password" name="password" id="password" placeholder="Enter password"><br>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password">
-                    </div>
-                    <button type="submit" class="submit">
-                    Sign up
-                </button>
-
-                <p class="signup-link">
-                    Have an account?
-                    <a href="./signin.html">Sign in</a>
-                </p>
-            </form>
-        </div>
+        <p class="form-title">Create an account</p>
+        <form class="form" onsubmit="validateForm()">
+            <div class="input-container">
+                <i class="bi bi-person-fill"></i>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-container">
+                <i class="bi bi-envelope-fill"></i>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-container">
+                <i class="bi bi-lock-fill"></i>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-container">
+                <i class="bi bi-lock-fill"></i>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="btn submit">
+                <i class="bi bi-person-plus-fill me-2"></i> Sign Up
+            </button>
+            <p class="signup-link mt-3">
+                Already have an account?
+                <a href="./signin.html" class="text-primary">Sign In</a>
+            </p>
+        </form>
     </div>
-    <div class="section2">
-    </div>
-
-    <script>
-        function getLocation() {
-            const locationElement = document.getElementById("current-location");
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        const { latitude, longitude } = position.coords;
-                        locationElement.textContent = `Latitude: ${latitude.toFixed(2)}, Longitude: ${longitude.toFixed(2)}`;
-                    },
-                    (error) => {
-                        locationElement.textContent = "Unable to fetch location. Please allow location access.";
-                    }
-                );
-            } else {
-                locationElement.textContent = "Geolocation is not supported by your browser.";
-            }
-        }
-    </script>
 </body>
 </html>

@@ -9,6 +9,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/welcome.css">
     <title>Pineapple Inc.</title>
+    <style>
+        /* Ensure carousel is above other content */
+        .carousel {
+            z-index: 1; /* Adjust to be visible beneath navbar */
+        }
+
+        .carousel-item {
+            height: 100vh; /* Ensures each carousel item takes full viewport height */
+            object-fit: cover; /* Makes sure the image covers the area */
+        }
+
+        /* Add padding top to ensure carousel isn't blocked by fixed navbar */
+        body {
+            padding-top: 65px; /* Adjust for fixed navbar height */
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            z-index: 5; /* Ensure carousel controls are above the carousel images */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar bg-body-tertiary" style="width: 100%; height: 65px; position: fixed;">
@@ -17,8 +37,6 @@
                 <img src="../logo.png" alt="pineapple inc logo" width="50" height="50">
                 <h3 style="font-family: 'Merriweather', serif;">Pineapple Inc.</h3>
             </a>
-
-            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -32,9 +50,9 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </nav>
+
     <div class="scroll-snap-card">
         <div class="slide one black-grad top-nav-pad">
             <h1 style="font-size: 70px">A new dawn</h1>
@@ -43,34 +61,67 @@
 
         <div class="slide two blue top-nav-pad">
             <div class="two-info">
-            <h2 style="padding-left: 20px; font-size: 40px">Become a better investor on the go</h2>
-            <h1 style="padding-left: 20px; padding-top: 0; font-size: 60px;">With the right app</h1>
-
-            <h3 style="padding-left: 20px; font-size: 30px;">Trade from anywhere, anytime.</h3>
+                <h2 style="padding-left: 20px; font-size: 40px">Become a better investor on the go</h2>
+                <h1 style="padding-left: 20px; padding-top: 0; font-size: 60px;">With the right app</h1>
+                <h3 style="padding-left: 20px; font-size: 30px;">Trade from anywhere, anytime.</h3>
             </div>
-
             <div>
-            <img id="trading-app-phone" src="../assets/wide_home_invest_hero_4k.png" alt="a trading app on a mobile phone">
+                <img id="trading-app-phone" src="../assets/wide_home_invest_hero_4k.png" alt="a trading app on a mobile phone">
             </div>
         </div>
 
         <div class="slide three">
             <div class="video-container">
-            <video id="three-back-video" autoplay loop muted preload="auto" playsinline class="three-back-video">
-                <source src="../assets/Dotcom_NewGeneration_Animation_WEB.mp4" type="video/mp4">
-            </video>
+                <video id="three-back-video" autoplay loop muted preload="auto" playsinline class="three-back-video">
+                    <source src="../assets/Dotcom_NewGeneration_Animation_WEB.mp4" type="video/mp4">
+                </video>
             </div>
-
             <div class="video-text">
-            <h1 style="font-size: 70px;">Join a new generation</h1>
-            <h1 style="font-size: 70px;">of Investors</h1>
-
-            <a href="./signup.html">
-            <button style="margin-top: 30px;" class="button-27">Sign up</button>
-            </a>
+                <h1 style="font-size: 70px;">Join a new generation</h1>
+                <h1 style="font-size: 70px;">of Investors</h1>
+                <a href="./signup.html">
+                    <button style="margin-top: 30px;" class="button-27">Sign up</button>
+                </a>
             </div>
-
         </div>
     </div>
+
+
+<!-- Separate Carousel Section -->
+<div id="newCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <!-- First Image -->
+      <div class="carousel-item active">
+        <img src="../assets/image1.jpeg" class="d-block w-100" alt="First Image" style="height: 60vh; object-fit: cover;">
+      </div>
+      <!-- Second Image -->
+      <div class="carousel-item">
+        <img src="../assets/image2.jpeg" class="d-block w-100" alt="Second Image" style="height: 60vh; object-fit: cover;">
+      </div>
+      <!-- Third Image -->
+      <div class="carousel-item">
+        <img src="../assets/image3.webp" class="d-block w-100" alt="Third Image" style="height: 60vh; object-fit: cover;">
+      </div>
+      <!-- Fourth Image -->
+      <div class="carousel-item">
+        <img src="../assets/image4.jpg" class="d-block w-100" alt="Fourth Image" style="height: 60vh; object-fit: cover;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#newCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#newCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!-- Bootstrap and jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

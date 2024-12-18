@@ -1,155 +1,196 @@
+/* Root variables for consistent theming */
 html {
-    --s: 57px; /* control the size*/
-    --c1: #ffffff;
-    --c2: #e3e3e3;
-    --c3: #f7f7f7;
-    
-    background:
-      conic-gradient(from 75deg,var(--c1)   15deg ,var(--c2) 0 30deg ,#0000 0 180deg,
-                                var(--c2) 0 195deg,var(--c1) 0 210deg,#0000 0) 
-         calc(var(--s)/2) calc(.5*var(--s)/tan(30deg)),
-      conic-gradient(var(--c1)   30deg ,var(--c3) 0 75deg ,var(--c1) 0 90deg, var(--c2) 0 105deg,
-                     var(--c3) 0 150deg,var(--c2) 0 180deg,var(--c3) 0 210deg,var(--c1) 0 256deg,
-                     var(--c2) 0 270deg,var(--c1) 0 286deg,var(--c2) 0 331deg,var(--c3) 0);
-    background-size: var(--s) calc(var(--s)/tan(30deg));
-  }
+  --s: 57px; /* control the size*/
+  --c1: #ffffff;
+  --c2: #e3e3e3;
+  --c3: #f7f7f7;
 
-body {
-    color: black;
+  background:
+      conic-gradient(from 75deg, var(--c1) 15deg, var(--c2) 0 30deg, #0000 0 180deg,
+          var(--c2) 0 195deg, var(--c1) 0 210deg, #0000 0)
+          calc(var(--s) / 2) calc(.5 * var(--s) / tan(30deg)),
+      conic-gradient(var(--c1) 30deg, var(--c3) 0 75deg, var(--c1) 0 90deg, var(--c2) 0 105deg,
+          var(--c3) 0 150deg, var(--c2) 0 180deg, var(--c3) 0 210deg, var(--c1) 0 256deg,
+          var(--c2) 0 270deg, var(--c1) 0 286deg, var(--c2) 0 331deg, var(--c3) 0);
+  background-size: var(--s) calc(var(--s) / tan(30deg));
 }
 
+body {
+  color: black;
+}
+
+/* Section styles */
 .section1 {
-    width: 50%;
-    float: left;
-    height: 100vh;
-    border-right: 1vw;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 30px;
+  width: 50%;
+  float: left;
+  height: 100vh;
+  border-right: 1vw;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 30px;
 }
 
 .section2 {
-    background-color: lightblue;
-    background-image: url('../assets/An\ advanced\ stock\ market\ graph\ is\ shown\ on\ a\ monitor\ with\ skyscrapers\ and\ office\ buildings;\ the\ conc.jpeg');
-    background-size: 100% 100%;
-    width: 50%;
-    float: left;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  background-color: lightblue;
+  background-image: url('../assets/An advanced stock market graph is shown on a monitor with skyscrapers and office buildings; the conc.jpeg');
+  background-size: 100% 100%;
+  width: 50%;
+  float: left;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Header styles */
 .header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header > h1 {
-    margin: 0 0 0 20px;
-    font-size: 40px;
-    font-weight: bold;
+  margin: 0 0 0 20px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .header-2 {
-    display: flex;
-    align-items: center;
-    font-size: 100px;
-    margin-left: 15%;
-    margin-bottom: 5%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #company-logo {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    margin-left: 100px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-left: 100px;
 }
 
+/* Form container */
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .form {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    max-width: 350px;
-    height: 380px;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    justify-content: space-between;
-  }
-  
-  .form-title {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-    text-align: center;
-    color: #000;
-  }
-  
-  .input-container {
-    position: relative;
-  }
-  
-  .input-container input, .form button {
-    outline: none;
-    border: 1px solid #e5e7eb;
-    margin: 8px 0;
-  }
-  
-  .input-container input {
-    background-color: #fff;
-    padding: 1rem;
-    padding-right: 3rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    width: 300px;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  }
-  
-  .submit {
-    display: block;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    background-color: #4F46E5;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    width: 100%;
-    border-radius: 0.5rem;
-    text-transform: uppercase;
-  }
-  
-  .signup-link {
-    color: #6B7280;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    text-align: center;
-  }
-  
-  .signup-link a {
-    text-decoration: underline;
-  }
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 350px;
+  height: 380px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  justify-content: space-between;
+}
+
+.form-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input, .form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
+}
+
+.input-container input {
+  background-color: #fff;
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.submit {
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #4F46E5;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.signup-link {
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.signup-link a {
+  text-decoration: underline;
+}
+
+/* Hero styles */
+.hero {
+  padding: 5rem 1rem;
+  text-align: center;
+  background: linear-gradient(to right, #4F46E5, #6B7280);
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* Modal styles */
+.modal-header {
+  background-color: #4F46E5;
+  color: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: #333;
+}
+
+.modal-footer button {
+  background-color: #4F46E5;
+  color: #fff;
+  border-radius: 5px;
+}
