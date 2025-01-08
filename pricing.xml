@@ -1,0 +1,32 @@
+<pricingTable>
+    <plan>
+        <name>Basic</name>
+        <price currency="USD">0</price>
+        <features>
+            <feature>Portfolio Tracking</feature>
+            <feature>Real-time Stock Prices</feature>
+            <feature>Basic Analytics</feature>
+        </features>
+    </plan>
+    <plan>
+        <name>Standard</name>
+        <price currency="USD">10</price>
+        <features>
+            <feature>Portfolio Tracking</feature>
+            <feature>Real-time Stock Prices</feature>
+            <feature>Advanced Analytics</feature>
+            <feature>News Alerts</feature>
+        </features>
+    </plan>
+    <plan>
+        <name>Premium</name>
+        <price currency="USD">25</price>
+        <features>
+            <feature>Portfolio Tracking</feature>
+            <feature>Real-time Stock Prices</feature>
+            <feature>Advanced Analytics</feature>
+            <feature>News Alerts</feature>
+            <feature>Personalized Recommendations</feature>
+        </features>
+    </plan>
+</pricingTable>
