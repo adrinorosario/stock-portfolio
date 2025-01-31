@@ -10,27 +10,25 @@
     <link rel="stylesheet" href="../styles/welcome.css">
     <title>Pineapple Inc.</title>
     <style>
-        /* Ensure carousel is above other content */
         .carousel {
-            z-index: 1; /* Adjust to be visible beneath navbar */
+            z-index: 1;
         }
 
         .carousel-item {
-            height: 100vh; /* Ensures each carousel item takes full viewport height */
-            object-fit: cover; /* Makes sure the image covers the area */
+            height: 100vh;
+            object-fit: cover;
         }
 
-        /* Add padding top to ensure carousel isn't blocked by fixed navbar */
         body {
-            padding-top: 65px; /* Adjust for fixed navbar height */
+            padding-top: 65px;
         }
 
         .carousel-control-prev, .carousel-control-next {
-            z-index: 5; /* Ensure carousel controls are above the carousel images */
+            z-index: 5;
         }
     </style>
 </head>
-<body>
+<body data-page="welcome">
     <nav class="navbar bg-body-tertiary" style="width: 100%; height: 65px; position: fixed;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="display: flex; flex-direction: row; align-items: center; gap: 10px">
@@ -40,7 +38,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="welcome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pricing.html">Pricing</a>  <!-- Added Pricing Link -->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Product</a>
@@ -52,11 +53,15 @@
             </div>
         </div>
     </nav>
+    
 
     <div class="scroll-snap-card">
         <div class="slide one black-grad top-nav-pad">
             <h1 style="font-size: 70px">A new dawn</h1>
             <h1 style="font-size: 70px">for active traders</h1>
+            <a href="pricing.html">
+                <button class="btn btn-warning mt-3">Get Started</button>
+            </a>
         </div>
 
         <div class="slide two blue top-nav-pad">
@@ -87,7 +92,6 @@
     </div>
 
 
-<!-- Separate Carousel Section -->
 <div id="newCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
       <!-- First Image -->
@@ -117,11 +121,8 @@
     </button>
   </div>
   
-  <!-- Bootstrap and jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  
-  
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/ajax.js"></script>
 </body>
 </html>
