@@ -1,0 +1,580 @@
+{
+  "stocks": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "shares": 10,
+      "currentPrice": 150.25
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "shares": 5,
+      "currentPrice": 2500.75
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "shares": 8,
+      "currentPrice": 300.5
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "shares": 3,
+      "currentPrice": 3200.0
+    },
+    {
+      "symbol": "FB",
+      "name": "Facebook, Inc.",
+      "shares": 15,
+      "currentPrice": 330.75
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "shares": 20,
+      "currentPrice": 650.75
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "shares": 12,
+      "currentPrice": 580.50
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "shares": 25,
+      "currentPrice": 155.30
+    },
+    {
+      "symbol": "NFLX",
+      "name": "Netflix, Inc.",
+      "shares": 8,
+      "currentPrice": 510.80
+    },
+    {
+      "symbol": "DIS",
+      "name": "The Walt Disney Company",
+      "shares": 18,
+      "currentPrice": 175.40
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe Inc.",
+      "shares": 7,
+      "currentPrice": 495.60
+    },
+    {
+      "symbol": "CRM",
+      "name": "Salesforce.com, Inc.",
+      "shares": 15,
+      "currentPrice": 240.30
+    },
+    {
+      "symbol": "PYPL",
+      "name": "PayPal Holdings, Inc.",
+      "shares": 22,
+      "currentPrice": 270.45
+    },
+    {
+      "symbol": "INTC",
+      "name": "Intel Corporation",
+      "shares": 30,
+      "currentPrice": 55.20
+    },
+    {
+      "symbol": "CSCO",
+      "name": "Cisco Systems, Inc.",
+      "shares": 40,
+      "currentPrice": 52.80
+    },
+    {
+      "symbol": "VZ",
+      "name": "Verizon Communications Inc.",
+      "shares": 35,
+      "currentPrice": 57.60
+    },
+    {
+      "symbol": "CMCSA",
+      "name": "Comcast Corporation",
+      "shares": 28,
+      "currentPrice": 58.30
+    },
+    {
+      "symbol": "PEP",
+      "name": "PepsiCo, Inc.",
+      "shares": 20,
+      "currentPrice": 145.80
+    },
+    {
+      "symbol": "COST",
+      "name": "Costco Wholesale Corporation",
+      "shares": 12,
+      "currentPrice": 380.50
+    },
+    {
+      "symbol": "TMUS",
+      "name": "T-Mobile US, Inc.",
+      "shares": 25,
+      "currentPrice": 145.20
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc.",
+      "shares": 8,
+      "currentPrice": 475.60
+    },
+    {
+      "symbol": "TXN",
+      "name": "Texas Instruments Incorporated",
+      "shares": 18,
+      "currentPrice": 185.30
+    },
+    {
+      "symbol": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "shares": 22,
+      "currentPrice": 135.80
+    },
+    {
+      "symbol": "SBUX",
+      "name": "Starbucks Corporation",
+      "shares": 30,
+      "currentPrice": 112.40
+    },
+    {
+      "symbol": "AMGN",
+      "name": "Amgen Inc.",
+      "shares": 15,
+      "currentPrice": 240.70
+    },
+    {
+      "symbol": "INTU",
+      "name": "Intuit Inc.",
+      "shares": 10,
+      "currentPrice": 470.30
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "shares": 40,
+      "currentPrice": 80.20
+    },
+    {
+      "symbol": "ISRG",
+      "name": "Intuitive Surgical, Inc.",
+      "shares": 5,
+      "currentPrice": 850.60
+    },
+    {
+      "symbol": "GILD",
+      "name": "Gilead Sciences, Inc.",
+      "shares": 25,
+      "currentPrice": 68.40
+    },
+    {
+      "symbol": "MDLZ",
+      "name": "Mondelez International, Inc.",
+      "shares": 35,
+      "currentPrice": 62.80
+    },
+    {
+      "symbol": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "shares": 2,
+      "currentPrice": 2250.30
+    },
+    {
+      "symbol": "ADP",
+      "name": "Automatic Data Processing, Inc.",
+      "shares": 18,
+      "currentPrice": 195.60
+    },
+    {
+      "symbol": "CHTR",
+      "name": "Charter Communications, Inc.",
+      "shares": 7,
+      "currentPrice": 680.40
+    },
+    {
+      "symbol": "MRNA",
+      "name": "Moderna, Inc.",
+      "shares": 12,
+      "currentPrice": 180.50
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology, Inc.",
+      "shares": 30,
+      "currentPrice": 78.90
+    },
+    {
+      "symbol": "ATVI",
+      "name": "Activision Blizzard, Inc.",
+      "shares": 25,
+      "currentPrice": 92.30
+    },
+    {
+      "symbol": "LRCX",
+      "name": "Lam Research Corporation",
+      "shares": 8,
+      "currentPrice": 620.70
+    },
+    {
+      "symbol": "ADSK",
+      "name": "Autodesk, Inc.",
+      "shares": 15,
+      "currentPrice": 280.50
+    },
+    {
+      "symbol": "NXPI",
+      "name": "NXP Semiconductors N.V.",
+      "shares": 20,
+      "currentPrice": 200.30
+    },
+    {
+      "symbol": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "shares": 3,
+      "currentPrice": 1450.80
+    },
+    {
+      "symbol": "XLNX",
+      "name": "Xilinx, Inc.",
+      "shares": 18,
+      "currentPrice": 130.60
+    },
+    {
+      "symbol": "KLAC",
+      "name": "KLA Corporation",
+      "shares": 12,
+      "currentPrice": 320.40
+    },
+    {
+      "symbol": "MNST",
+      "name": "Monster Beverage Corporation",
+      "shares": 35,
+      "currentPrice": 92.70
+    },
+    {
+      "symbol": "IDXX",
+      "name": "IDEXX Laboratories, Inc.",
+      "shares": 7,
+      "currentPrice": 550.30
+    },
+    {
+      "symbol": "MCHP",
+      "name": "Microchip Technology Incorporated",
+      "shares": 25,
+      "currentPrice": 145.80
+    },
+    {
+      "symbol": "PAYX",
+      "name": "Paychex, Inc.",
+      "shares": 30,
+      "currentPrice": 105.40
+    },
+    {
+      "symbol": "CTAS",
+      "name": "Cintas Corporation",
+      "shares": 10,
+      "currentPrice": 360.20
+    },
+    {
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals Incorporated",
+      "shares": 15,
+      "currentPrice": 195.60
+    },
+    {
+      "symbol": "WDAY",
+      "name": "Workday, Inc.",
+      "shares": 12,
+      "currentPrice": 240.30
+    },
+    {
+      "symbol": "CDNS",
+      "name": "Cadence Design Systems, Inc.",
+      "shares": 20,
+      "currentPrice": 135.80
+    },
+    {
+      "symbol": "ANSS",
+      "name": "ANSYS, Inc.",
+      "shares": 8,
+      "currentPrice": 340.50
+    },
+    {
+      "symbol": "ROST",
+      "name": "Ross Stores, Inc.",
+      "shares": 25,
+      "currentPrice": 120.70
+    },
+    {
+      "symbol": "VRSK",
+      "name": "Verisk Analytics, Inc.",
+      "shares": 15,
+      "currentPrice": 175.30
+    },
+    {
+      "symbol": "FAST",
+      "name": "Fastenal Company",
+      "shares": 40,
+      "currentPrice": 52.80
+    },
+    {
+      "symbol": "CPRT",
+      "name": "Copart, Inc.",
+      "shares": 30,
+      "currentPrice": 130.40
+    },
+    {
+      "symbol": "CTSH",
+      "name": "Cognizant Technology Solutions Corporation",
+      "shares": 28,
+      "currentPrice": 72.60
+    },
+    {
+      "symbol": "SNPS",
+      "name": "Synopsys, Inc.",
+      "shares": 12,
+      "currentPrice": 265.30
+    },
+    {
+      "symbol": "FISV",
+      "name": "Fiserv, Inc.",
+      "shares": 22,
+      "currentPrice": 110.80
+    },
+    {
+      "symbol": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "shares": 35,
+      "currentPrice": 135.20
+    },
+    {
+      "symbol": "MAR",
+      "name": "Marriott International, Inc.",
+      "shares": 18,
+      "currentPrice": 140.60
+    },
+    {
+      "symbol": "SWKS",
+      "name": "Skyworks Solutions, Inc.",
+      "shares": 20,
+      "currentPrice": 175.40
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML Holding N.V.",
+      "shares": 5,
+      "currentPrice": 650.30
+    },
+    {
+      "symbol": "BIIB",
+      "name": "Biogen Inc.",
+      "shares": 10,
+      "currentPrice": 270.50
+    },
+    {
+      "symbol": "DXCM",
+      "name": "DexCom, Inc.",
+      "shares": 8,
+      "currentPrice": 410.80
+    },
+    {
+      "symbol": "ALGN",
+      "name": "Align Technology, Inc.",
+      "shares": 6,
+      "currentPrice": 590.60
+    },
+    {
+      "symbol": "ILMN",
+      "name": "Illumina, Inc.",
+      "shares": 7,
+      "currentPrice": 450.30
+    },
+    {
+      "symbol": "MTCH",
+      "name": "Match Group, Inc.",
+      "shares": 15,
+      "currentPrice": 145.70
+    },
+    {
+      "symbol": "DLTR",
+      "name": "Dollar Tree, Inc.",
+      "shares": 25,
+      "currentPrice": 100.40
+    },
+    {
+      "symbol": "EA",
+      "name": "Electronic Arts Inc.",
+      "shares": 18,
+      "currentPrice": 140.30
+    },
+    {
+      "symbol": "ADI",
+      "name": "Analog Devices, Inc.",
+      "shares": 22,
+      "currentPrice": 165.80
+    },
+    {
+      "symbol": "ORLY",
+      "name": "O'Reilly Automotive, Inc.",
+      "shares": 8,
+      "currentPrice": 550.60
+    },
+    {
+      "symbol": "CERN",
+      "name": "Cerner Corporation",
+      "shares": 30,
+      "currentPrice": 78.90
+    },
+    {
+      "symbol": "SIRI",
+      "name": "Sirius XM Holdings Inc.",
+      "shares": 150,
+      "currentPrice": 6.40
+    },
+    {
+      "symbol": "PCAR",
+      "name": "PACCAR Inc",
+      "shares": 35,
+      "currentPrice": 90.30
+    },
+    {
+      "symbol": "NTES",
+      "name": "NetEase, Inc.",
+      "shares": 12,
+      "currentPrice": 105.60
+    },
+    {
+      "symbol": "XEL",
+      "name": "Xcel Energy Inc.",
+      "shares": 40,
+      "currentPrice": 68.70
+    },
+    {
+      "symbol": "EBAY",
+      "name": "eBay Inc.",
+      "shares": 45,
+      "currentPrice": 65.30
+    },
+    {
+      "symbol": "VRSN",
+      "name": "VeriSign, Inc.",
+      "shares": 10,
+      "currentPrice": 220.40
+    },
+    {
+      "symbol": "LULU",
+      "name": "Lululemon Athletica Inc.",
+      "shares": 8,
+      "currentPrice": 320.50
+    },
+    {
+      "symbol": "BIDU",
+      "name": "Baidu, Inc.",
+      "shares": 15,
+      "currentPrice": 185.70
+    },
+    {
+      "symbol": "SPLK",
+      "name": "Splunk Inc.",
+      "shares": 20,
+      "currentPrice": 130.60
+    },
+    {
+      "symbol": "SGEN",
+      "name": "Seagen Inc.",
+      "shares": 12,
+      "currentPrice": 150.30
+    },
+    {
+      "symbol": "TCOM",
+      "name": "Trip.com Group Limited",
+      "shares": 35,
+      "currentPrice": 35.80
+    },
+    {
+      "symbol": "FOXA",
+      "name": "Fox Corporation",
+      "shares": 40,
+      "currentPrice": 37.20
+    },
+    {
+      "symbol": "EXPE",
+      "name": "Expedia Group, Inc.",
+      "shares": 18,
+      "currentPrice": 165.40
+    },
+    {
+      "symbol": "INCY",
+      "name": "Incyte Corporation",
+      "shares": 25,
+      "currentPrice": 80.60
+    },
+    {
+      "symbol": "CHKP",
+      "name": "Check Point Software Technologies Ltd.",
+      "shares": 20,
+      "currentPrice": 120.30
+    },
+    {
+      "symbol": "DOCU",
+      "name": "DocuSign, Inc.",
+      "shares": 15,
+      "currentPrice": 210.50
+    },
+    {
+      "symbol": "ZM",
+      "name": "Zoom Video Communications, Inc.",
+      "shares": 10,
+      "currentPrice": 350.80
+    },
+    {
+      "symbol": "OKTA",
+      "name": "Okta, Inc.",
+      "shares": 12,
+      "currentPrice": 240.60
+    },
+    {
+      "symbol": "TEAM",
+      "name": "Atlassian Corporation Plc",
+      "shares": 8,
+      "currentPrice": 260.40
+    },
+    {
+      "symbol": "DDOG",
+      "name": "Datadog, Inc.",
+      "shares": 18,
+      "currentPrice": 105.70
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "shares": 14,
+      "currentPrice": 220.30
+    },
+    {
+      "symbol": "ZS",
+      "name": "Zscaler, Inc.",
+      "shares": 10,
+      "currentPrice": 205.60
+    },
+    {
+      "symbol": "FTNT",
+      "name": "Fortinet, Inc.",
+      "shares": 25,
+      "currentPrice": 240.80
+    },
+    {
+      "symbol": "PTON",
+      "name": "Peloton Interactive, Inc.",
+      "shares": 20,
+      "currentPrice": 110.40
+    }
+  ]
+}
