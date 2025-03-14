@@ -1,0 +1,32 @@
+[
+  {
+    "symbol": "AAPL",
+    "quantity": 10,
+    "price": 150,
+    "total": 1500
+  },
+  {
+    "symbol": "MSFT",
+    "quantity": 20,
+    "price": 200,
+    "total": 4000
+  },
+  {
+    "symbol": "AMZN",
+    "quantity": 30,
+    "price": 300,
+    "total": 9000
+  },
+  {
+    "symbol": "TKRW",
+    "quantity": 50,
+    "price": 432,
+    "total": 21600
+  },
+  {
+    "symbol": "NTFX",
+    "quantity": 20,
+    "price": 330,
+    "total": 6600
+  }
+]

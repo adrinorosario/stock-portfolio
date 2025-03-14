@@ -6,7 +6,6 @@ app.controller('StockController', function($scope, $http) {
     $scope.sortBy = 'name';
     $scope.reverseSort = false;
 
-    // Fetch JSON data
     $http.get('stock-portfolio.json').then(function(response) {
         $scope.stocks = response.data.stocks;
         $scope.$broadcast('dataLoaded', $scope.stocks);
